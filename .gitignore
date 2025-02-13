@@ -1,0 +1,17 @@
+.gitignore
+.sconsign.dblite
+*.bbl
+*.blg
+*.aux
+*.bcf
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*~
+*.pdf
+auto/
