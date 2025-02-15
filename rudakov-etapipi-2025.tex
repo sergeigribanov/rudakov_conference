@@ -83,15 +83,15 @@
     \begin{itemize}
     \item ДК: $1218$ гексоганальных ячеек с сигнальными и полевыми проволочками
       (W-Re слав, диаметр $15\text{ мкм}$); пространственное разрешение
-      $\sigma_{R\phi}\sim{100}\text{ мкм}$, $\sigma_{Z}\sim{2.5}\text{ мм}$, $\sigma{P}/P\sim{?}$.
+      $\sigma_{R\phi}\sim{100}\text{ мкм}$, $\sigma_{Z}\sim{2.5}\text{ мм}$, $\sigma{P}/P\sim{2}\text{-}4\%$.
     \item Сверхпроводящий соленоид с магнитным полем~$\sim{1.3}\text{ Тл}$.
     \item Z-камера
     \item LXe калориметр: ширина $5.1\text{ }X_0$, 196 башен и 1286 полосок,
       пространственное разрешение $1$-$2\text{ мм}$, энергетическое~(для
       конверсии фотонов) $\sigma{E}/E\sim 0.034/\sqrt{E}\text{[ГэВ]}\oplus{0.020}$.
     \item CsI калориметр: ширина $8\text{ }X_0$, 1152 кристалла.
-    \item TOF:
-    \item Mu:
+    \item TOF: % ременное разрешение 0.5-0.8ns
+    \item Mu: % временное разрешение 0.7ns
     \end{itemize}
   \end{minipage}
 \end{frame}
@@ -116,12 +116,25 @@
       чтобы фит сошелся, но никаких ограничений на $\chi^2$ не накладывается. Нужна
       для того, чтобы в амплитудном фите четырех-импульс двух фотонов
       соответствовал четырех-импульсу $\eta$-мезона.
-  \end{itemize}
-\end{frame}
+    \end{itemize}
+  \end{frame}
 
-\begin{frame}
-  \frametitle{Оперделение числа сигнальных событий}
-\end{frame}
+  \begin{frame}
+    \frametitle{Спектр масс двух фотонов}
+    \begin{figure}
+      \includegraphics[width=0.8\linewidth]{figures/mgg_e700.eps}
+    \end{figure}
+    \begin{itemize}
+    \item{\scriptsizeНа рисунке приведен спектр масс двух фотонов, кандидатов на фотоны из
+        распада $\eta\to\gamma\gamma$.}
+    \item{\scriptsizeЧисло событий опредляемое из фита $m_{\gamma\gamma}$ используется для получения
+        сечения.}
+    \item{\scriptsizeПри амплитудном анализе накладывается дополнительное условие
+        $0.51\text{ МэВ}/c^2<m_{\gamma\gamma}<0.59\text{ МэВ}/c^2$.}
+    \item{\scriptsizeПри амплитудном анализе точки с близкими энергиями в системе центра
+        масс объединяются с целью увеличения статистики.}
+    \end{itemize}
+  \end{frame}
 
 \begin{frame}
   \frametitle{Амплитудный анализ процесса $e^+e^-\to\eta\pi^+\pi^-$}
@@ -190,7 +203,7 @@
   \begin{eqnarray*}
     \textstyle
     \begin{split}
-      &\mathcal{L}_{\text{ext}} = \frac{N^{N_{\text{exp}}}_{\text{tot}}}{N_{\text{exp}}!}e^{-N_{\text{tot}}}\prod_{\ell \in \text{exp.}}f(\Phi_{\ell};\bm{C}_{\text{sig}},\bm{C}_{\text{bkg}}) = \frac{1}{N_{\text{exp}}!}e^{-N_{\text{tot}}}\prod_{\ell \in \text{exp.}}N_{\text{tot}}f(\Phi_{\ell};\bm{C}_{\text{sig}},\bm{C}_{\text{bkg}}) \\
+      &\mathcal{L}_{\text{ext}} = \frac{N^{N_{\text{exp}}}_{\text{tot}}}{N_{\text{exp}}!}e^{-N_{\text{tot}}}\prod_{\ell \in \text{exp}}f(\Phi_{\ell};\bm{C}_{\text{sig}},\bm{C}_{\text{bkg}}) = \frac{1}{N_{\text{exp}}!}e^{-N_{\text{tot}}}\prod_{\ell \in \text{exp}}N_{\text{tot}}f(\Phi_{\ell};\bm{C}_{\text{sig}},\bm{C}_{\text{bkg}}) \\
       &\boxed{%
        \ln{\mathcal{L}_{\text{ext}}} = \sum_{\ell \in \text{exp}}\ln{\left(
         {\bm{C}^{\dag}}_{\text{sig}}\hat{\rho}_{\text{sig}}(\Phi_{\ell})\bm{C}_{\text{sig}} +
@@ -211,7 +224,8 @@
       $\hat{\text{I}}_{\text{sig}}$ и $\hat{\text{I}}_{\text{bkg}}$ рассчитываются
       перед фитом.
     \item В данном анализе $\hat{\rho}_{\text{bkg}}(\Phi_{\ell})$ --- матрица $1\times{1}$, т.к.
-      рассматривается фон только от $e^+e^-\rightarrow\pi^+\pi^-\pi^0\pi^0$~(по фазовому объему).
+      рассматривается фон только от $e^+e^-\rightarrow\pi^+\pi^-\pi^0\pi^0$~(доминирующий фоновый
+      процесс). События фона пока что моделируются по фазовому объему. Про работу над уточнением модели фона см.\ последние слайды.
     \end{itemize}
   \end{frame}
 
@@ -274,10 +288,8 @@
   \scriptsize
   Плотность вероятности фона ($e^+e^-\rightarrow\pi^+\pi^-\pi^0\pi^0$ по фазовому объему) в срезе по
   некоторым переменным.  данной группе точек (вблизи $\sqrt{s}\approx 1.9\text{ GeV}$)
-  оценка плотности фона была проведена по 15017 событиям (в других
-  энергетических группах и того меньше). Далее будет показано, что это как-то
-  работает~(т.к. фон меняется плавно, $\sigma$ для KDE выбран большим).
-  \textbf{Актуализировать числа!!!!!!}
+  оценка плотности фона была проведена по 15017 событиям~(после наложения всех
+  критериев отбора).
 \end{frame}
 
 
@@ -303,6 +315,8 @@
       \includegraphics[width=\linewidth]{figures/theta_piminus_g950.eps}
     \end{figure}
   \end{minipage}
+  \scriptsize
+  Всего $5129$ событий эксперимента~($4169$ событий сигнала, $960$ событий фона).
 \end{frame}
 
 \begin{frame}
@@ -327,30 +341,82 @@
       \includegraphics[width=\linewidth]{figures/theta_piminus_g705.eps}
     \end{figure}
   \end{minipage}
+  \scriptsize
+  Всего $3558$ событий эксперимента~($3099$ событий сигнала, $459$ событий фона).
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Сечение}
-  \begin{minipage}[t]{0.48\linewidth}
+  \begin{minipage}[t]{0.45\linewidth}
     \begin{figure}
       \includegraphics[width=\linewidth]{figures/bcs_etapipi.eps}
     \end{figure}
   \end{minipage}
-  \begin{minipage}[t]{0.48\linewidth}
+  \begin{minipage}[t]{0.45\linewidth}
     \begin{figure}
       \includegraphics[width=\linewidth]{figures/bcs_partial_rhoeta.eps}
     \end{figure}
   \end{minipage}
-  \begin{minipage}[t]{0.48\linewidth}
+  \begin{minipage}[t]{0.45\linewidth}
     \begin{figure}
       \includegraphics[width=\linewidth]{figures/bcs_partial_a2pi.eps}
     \end{figure}
+    \scriptsize
+    Результаты очень предварительные. Ошибки парциальных сечений завышены.
+  \end{minipage}
+  \begin{minipage}[t]{0.54\linewidth}
+    \scriptsize
+    Борновское сечение:
+    \begin{eqnarray*}
+      \textstyle
+      \sigma_{\text{B}}(s) =
+      \frac{N_{\text{sig}}(s)}{\varepsilon_{\text{sig}}(s)L_{\text{int}}(s)(1 +
+      \delta_{\text{rad}}(s))},
+    \end{eqnarray*}
+    Эффективность регистрации событий сигнала $\varepsilon_{\text{sig}}$ определялась по
+    моделированию~($\rho(770)\eta + a_2(1320)\pi$).\\
+    Парциальные сечения:
+    \begin{eqnarray*}
+      \textstyle
+      \begin{split}
+        \sigma_k(s; \bm{C}_{\text{bkg}}) &= \sigma_{\text{B}}(s) \times \text{ratio}_k(s;
+        \bm{C}_{\text{bkg}}), \\
+        \text{ratio}_{k}(s; \bm{C}_{\text{bkg}}) &= \frac{\int\text{I}^{(k)}_{\text{sig}}(\Phi;\bm{C}_{\text{sig}})\dd{\Phi}}{\int\text{I}_{\text{sig}}(\Phi;\bm{C}_{\text{sig}})\dd{\Phi}}
+      \end{split}
+      \end{eqnarray*}
   \end{minipage}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Уточнение модели фона}
+  \frametitle{Уточнение модели фона~($e^+e^-\to\pi^+\pi^-\pi^0\pi^0$)}
+  \begin{itemize}
+    \item{\scriptsizeДля уточнения модели фона был проведен амплитудный анализ процесса
+        $e^+e^-\to{4\pi}$. }
+      \item{\scriptsizeПолучен предворительный результат, достаточный для уточнения
+      модели фонового процесса $e^+e^-\to\pi^+\pi^-\pi^0\pi^0$.s}
+    \item{\scriptsize Проводились амплитудные фит для различных конечных состояний:}
+      \begin{itemize}
+      \item{\scriptsize $\pi^+\pi^-\pi^0\pi^0$,}
+      \item{\scriptsize совместный фит для $\pi^+\pi^-\pi^0\pi^0$ и $\pi^+\pi^-\pi^+\pi^-$.}
+      \end{itemize}
+    \item{\scriptsizeПромежуточные состояния:}
+      \begin{itemize}
+      \item{\scriptsize$e^+e^-\to\omega(782)\pi^0$~(P-волна), $\omega\to\rho(770)\pi$~(P-волна); % только в
+          % $e^+e^-\to\pi^+\pi^-\pi^0\pi^0$;
+        }
+        \item{\scriptsize$e^+e^-\to{a}_1\pi$~(S- и D-волны), ${a}_1\to\rho(770)\pi$~(S- и D-волны);}
+        \item{\scriptsize$e^+e^-\to{a}_1\pi$~(S- и D-волны), ${a}_1\to\sigma\pi$~(P-волна);}
+        \item{\scriptsize$e^+e^-\to\rho(770)\rho(770)$~(P- и $F$-волны); только в $e^+e^-\to\pi^+\pi^-\pi^0\pi^0$;}
+        \item{\scriptsize$e^+e^-\to\rho(770)\sigma$~(S- и D-волны);}
+      \item{\scriptsize$e^+e^-\to\rho(770)f_0(980)$~(S- и D-волны);}
+      \item{\scriptsize$e^+e^-\to{h}_1(1170)\pi^0$~(S- и D-волны), ${h}_1\to\rho\pi$~(S- и
+          D-волны); %только в только в $e^+e^-\to\pi^+\pi^-\pi^0\pi^0$;
+        }
+      \item{\scriptsize$e^+e^-\to{a}_2(1320)\pi$~(D-волна), ${a}_2(1320)\to\rho(770)\pi$~(D-волна);}
+      \item{\scriptsize$e^+e^-\to\rho(770)f_2(1270)$~(S-, D-, G-волны).}
+      \end{itemize}
+  \end{itemize}
 \end{frame}
 
 
