@@ -33,67 +33,51 @@
 
 \title[$e^+e^-\rightarrow\eta\pi^+\pi^-$]{Изучение процесса $e^+e^-\to\eta\pi^+\pi^-$ с детектором КМД-3}
 \author{Грибанов Сергей Сергеевич}
-\date{\today}
-
+\institute{ИЯФ СО РАН}
+\date[февраль, 2025]{Сессия-конференция секции ядерной физики ОФН РАН, посвященная 70-летию В.А. Рубакова}
 
 \begin{document}
 
 \frame{\titlepage}
 
 \begin{frame}
-  \frametitle{Мотивация}
+  \frametitle{Коллайдер -2000. Детектор КМД-3.}
+  \begin{minipage}[t]{0.59\linewidth}
+    \begin{figure}
+      \includegraphics[width=0.6\linewidth]{figures/vepp2k.png}
+    \end{figure}
+    \begin{itemize}
+    \item{\scriptsizeОбласть сканирования $0.3\text{ ГэВ} < \sqrt{s} < 2.0\text{ ГэВ}$.}
+    \item{\scriptsizeЭнергия измеряется методом обратного комптоновского рассеяния с точностью
+        $50\text{ КэВ}$.}
+    \item{\scriptsizeВпервые использована методика круглых пучков.}
+    \item{\scriptsizeДостигнута светимость
+        $6\times{10^{31}}\text{ см}^{-2}\text{с}^{-1}$~(проектная~$\sim{10^{32}}\text{ см}^{-2}\text{c}^{-1}$).}
+    \item{\scriptsizeДва детектора КМД-3 и СНД.}
+    \end{itemize}
+  \end{minipage}
+  \begin{minipage}[t]{0.4\linewidth}
+    \begin{figure}
+      \includegraphics[width=0.8\linewidth]{figures/cmd3.png}
+    \end{figure}
+  \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Мотивация. Данные.}
+  \begin{block}{Мотивация}
   \begin{itemize}
   \item Изучение динамики.
-  \item Вычисление $\mathcal{B}()$, тест CVC-гипотезы.
+  \item Вычисление $\mathcal{B}(\tau^-\to\eta\pi^-\pi^0\nu_{\tau})$, тест CVC-гипотезы.
   \item Получение форм-фактора $\eta\to\gamma^{\star}\gamma^{\star}$.
   \item Вклад в $(g-2)_{\mu}$.
   \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Коллайдер ВЭПП-2000}
-  \begin{minipage}[t]{0.49\linewidth}
-    \begin{figure}
-      \includegraphics[width=\linewidth]{figures/vepp2k.png}
-    \end{figure}
-  \end{minipage}
-  \begin{minipage}[t]{0.5\linewidth}
-    \scriptsize
-    \begin{itemize}
-    \item Область сканирования $A < \sqrt{s} < B$.
-    \item Энергия измеряется методом обратного комптоновского рассеяния с точностью
-      $50\text{ КэВ}$.
-    \item Выпервые использована методика круглых пучков.
-    \item Достигнута светимость
-      $6\times{10^{31}}\text{ см}^{-2}\text{с}^{-1}$~(проектная~$\sim{10^{32}}\text{ см}^{-2}\text{c}^{-1}$).
-    \item Два детектора КМД-3 и СНД.
-    \end{itemize}
-  \end{minipage}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Детектор КМД-3}
-  \begin{minipage}[t]{0.4\linewidth}
-    \begin{figure}
-      \includegraphics[width=\linewidth]{figures/cmd3.png}
-    \end{figure}
-  \end{minipage}
-  \begin{minipage}[t]{0.55\linewidth}
-    \scriptsize
-    \begin{itemize}
-    \item ДК: $1218$ гексоганальных ячеек с сигнальными и полевыми проволочками
-      (W-Re слав, диаметр $15\text{ мкм}$); пространственное разрешение
-      $\sigma_{R\phi}\sim{100}\text{ мкм}$, $\sigma_{Z}\sim{2.5}\text{ мм}$, $\sigma{P}/P\sim{2}\text{-}4\%$.
-    \item Сверхпроводящий соленоид с магнитным полем~$\sim{1.3}\text{ Тл}$.
-    \item Z-камера
-    \item LXe калориметр: ширина $5.1\text{ }X_0$, 196 башен и 1286 полосок,
-      пространственное разрешение $1$-$2\text{ мм}$, энергетическое~(для
-      конверсии фотонов) $\sigma{E}/E\sim 0.034/\sqrt{E}\text{[ГэВ]}\oplus{0.020}$.
-    \item CsI калориметр: ширина $8\text{ }X_0$, 1152 кристалла.
-    \item TOF: % ременное разрешение 0.5-0.8ns
-    \item Mu: % временное разрешение 0.7ns
-    \end{itemize}
-  \end{minipage}
+\end{block}
+\begin{block}{Данные}
+  В анализе использовались данные с детектора КМД-3, соответствующие диапазону
+  энергий $1.2\text{ ГэВ}/c^2\lesssim\sqrt{s}\lesssim{2.0}\text{ ГэВ}/c^2$. Интегральная светимость
+  использованных в анализе данных~$\approx{684.5}\text{ пб}^{-1}$.
+\end{block}
 \end{frame}
 
 \begin{frame}
@@ -104,14 +88,13 @@
     \item Наличие двух или более фотонов с энергиями больше $50\text{ МэВ}$.
     \item Суммарное энерговыделение кандидатов на $\pi^+$ и $\pi^-$ в калориметре меньше
       $0.4 + 0.25\times(\sqrt{s} - 1.2)$~ГэВ для подавления событий $e^+e^-$ рассеяния.
-    % \item В зависимостях $\dv{E(p)}{x}$ для кандидатов в $\pi^{\pm}$ вырезается (мягко) области
-    %   отвечающие $\pi$-мезонам.
     \item Кинематическая реконструкция\footfullcite{Gribanov_2023}
       в гипотезе $e^+e^-\rightarrow\pi^+\pi^-\gamma\gamma$: фит должен сойтись
       и $\chi^2<40$.
     \item Кинематическая реконструкция в гипотезе $e^+e^-\rightarrow\pi^+\pi^-\gamma\gamma\gamma\gamma_{\text{lost}}$. Одна
       пара фотонов складывается в $\pi^0$ (для которой $\chi^2$ меньше). Требуется, чтобы
-      либо фит не сошелся, либо фит сошелся и $\chi^2>20$.
+      либо фит не сошелся, либо фит сошелся и $\chi^2>20$. Данный критерий отбора
+      накладывается, чтобы дополнительно подовить события процесса $e^+e^-\to\pi^+\pi^-\pi^0\pi^0$.
     \item Кинематическая реконструкция в гипотезе $e^+e^-\rightarrow\eta\pi^+\pi^-$, $\eta\rightarrow\gamma\gamma$. Требуется,
       чтобы фит сошелся, но никаких ограничений на $\chi^2$ не накладывается. Нужна
       для того, чтобы в амплитудном фите четырех-импульс двух фотонов
@@ -122,17 +105,18 @@
   \begin{frame}
     \frametitle{Спектр масс двух фотонов}
     \begin{figure}
-      \includegraphics[width=0.8\linewidth]{figures/mgg_e700.eps}
+      \includegraphics[width=0.65\linewidth]{figures/mgg_e700.eps}
     \end{figure}
     \begin{itemize}
     \item{\scriptsizeНа рисунке приведен спектр масс двух фотонов, кандидатов на фотоны из
         распада $\eta\to\gamma\gamma$.}
-    \item{\scriptsizeЧисло событий опредляемое из фита $m_{\gamma\gamma}$ используется для получения
+    \item{\scriptsizeЧисло событий определяемое из фита $m_{\gamma\gamma}$ используется для получения
         сечения.}
     \item{\scriptsizeПри амплитудном анализе накладывается дополнительное условие
         $0.51\text{ МэВ}/c^2<m_{\gamma\gamma}<0.59\text{ МэВ}/c^2$.}
     \item{\scriptsizeПри амплитудном анализе точки с близкими энергиями в системе центра
-        масс объединяются с целью увеличения статистики.}
+        масс объединяются с целью увеличения
+        статистики~(шаг $\Delta{E_{\text{ц.м.}}}\sim{10}\text{-}20\text{ МэВ}$).}
     \end{itemize}
   \end{frame}
 
@@ -168,12 +152,12 @@
    \end{eqnarray*}
    где $\textstyle\bm{C}_{\text{sig}}$ --- параметры модели сигнального процесса,
    $\textstyle\bm{C}_{\text{bkg}}$ --- параметры модели фонового процесса;
-   $\textstyle\varepsilon_{\text{phsp sig}}$ --- эффективность событий сигнала, разыграных по
+   $\textstyle\varepsilon_{\text{phsp sig}}$ --- эффективность событий сигнала, разыгранных по
    фазовому объему; $\textstyle{}\text{I}_{\text{bkg}}$ --- функция, описывающая распреде-
 \end{minipage}
 \begin{minipage}[t]{0.49\linewidth}
   \scriptsize
-  ление~(зарегестрированных) событий фонового процесса в переменных сигнального
+  ление~(зарегистрированных) событий фонового процесса в переменных сигнального
   процесса; $\textstyle{}\text{I}_{\text{sig}}$ --- усредненный по поляризациям начальных частиц
   квадрат модуля суммарной амплитуды сигнального процесса; $\textstyle{}N_{\text{tot}}$ ---
   нормировка: $\textstyle{}N_{\text{tot}} = N_{\text{sig}} + N_{\text{bkg}}$,
@@ -191,7 +175,7 @@
   Функцию $\textstyle{}\text{I}_{\text{bkg}}$ можно записать в виде:
   $\textstyle{}\text{I}_{\text{bkg}}=\bm{C}^{\dag}_{\text{bkg}}\hat{\rho}_{\text{bkg}}\bm{C}_{\text{bkg}}$, где
   $\textstyle{}\hat{\rho}^{\dag}_{\text{bkg}}=\hat{\rho}_{\text{bkg}}$, $\hat{\rho}_{\text{bkg}}$ ---
-  дигональная матрица, $\bm{C}_{\text{bkg}}\in\mathbb{R}^{n_{\text{bkg}}}$. Тогда
+  диагональная матрица, $\bm{C}_{\text{bkg}}\in\mathbb{R}^{n_{\text{bkg}}}$. Тогда
   $\textstyle{}N_{\text{bkg}}=\bm{C}^{\dag}_{\text{bkg}}\hat{\text{I}}_{\text{bkg}}\bm{C}_{\text{bkg}}$, где
   $\textstyle{}\hat{\text{I}}_{\text{bkg}}=\frac{1}{N^{\text{MC}}_{\text{phsp sig}}}\sum_{j \in \text{phsp sig}}\frac{\hat{\rho}_{\text{bkg}}(\Phi_j)}{\varepsilon_{\text{phsp sig}}(\Phi_j)}$.
 \end{minipage}
@@ -287,7 +271,7 @@
   \end{center}
   \scriptsize
   Плотность вероятности фона ($e^+e^-\rightarrow\pi^+\pi^-\pi^0\pi^0$ по фазовому объему) в срезе по
-  некоторым переменным.  данной группе точек (вблизи $\sqrt{s}\approx 1.9\text{ GeV}$)
+  некоторым переменным. В данной группе точек (вблизи $\sqrt{s}\approx 1.9\text{ GeV}$)
   оценка плотности фона была проведена по 15017 событиям~(после наложения всех
   критериев отбора).
 \end{frame}
@@ -393,14 +377,15 @@
   \begin{itemize}
     \item{\scriptsizeДля уточнения модели фона был проведен амплитудный анализ процесса
         $e^+e^-\to{4\pi}$. }
-      \item{\scriptsizeПолучен предворительный результат, достаточный для уточнения
-      модели фонового процесса $e^+e^-\to\pi^+\pi^-\pi^0\pi^0$.s}
+      \item{\scriptsizeПолучен предварительный результат, достаточный для уточнения
+      модели фонового процесса $e^+e^-\to\pi^+\pi^-\pi^0\pi^0$.}
     \item{\scriptsize Проводились амплитудные фит для различных конечных состояний:}
       \begin{itemize}
       \item{\scriptsize $\pi^+\pi^-\pi^0\pi^0$,}
       \item{\scriptsize совместный фит для $\pi^+\pi^-\pi^0\pi^0$ и $\pi^+\pi^-\pi^+\pi^-$.}
       \end{itemize}
-    \item{\scriptsizeПромежуточные состояния:}
+    \item{\scriptsizeПромежуточные состояния~(список приблизительный, использовались
+        менее и более богаты модели):}
       \begin{itemize}
       \item{\scriptsize$e^+e^-\to\omega(782)\pi^0$~(P-волна), $\omega\to\rho(770)\pi$~(P-волна); % только в
           % $e^+e^-\to\pi^+\pi^-\pi^0\pi^0$;
@@ -419,5 +404,29 @@
   \end{itemize}
 \end{frame}
 
+
+\begin{frame}
+  \frametitle{Характерные примеры спектров~($e^+e^-\to\pi^+\pi^-\pi^0\pi^0$)}
+  \begin{minipage}[t]{0.49\linewidth}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{figures/m_piplpimipi0_g650_2pi2pi0.eps}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}[t]{0.49\linewidth}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{figures/m_pipi0_g780_2pi2pi0.eps}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}[t]{0.49\linewidth}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{figures/m_pi0pi0_g930_2pi2pi0.eps}
+    \end{figure}
+  \end{minipage}
+   \begin{minipage}[t]{0.49\linewidth}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{figures/m_pipi0pi0_g1000_2pi2pi0.eps}
+    \end{figure}
+  \end{minipage}
+\end{frame}
 
 \end{document}
